@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: #FF416C;
+    background: linear-gradient(45deg, #ff6246, #ff5c82, #ff1c51, #fc2356, #ff3a3a);
+    background-size: 300%;
+    font-family: sans-serif;
+    animation: background 10s ease infinite;
+}
+
+.title{
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.frase{
+    background-color: rgba(114, 114, 114, 0.26);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 110px;
+    width: 350px;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 15px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.btn{
+    background-color: #ff416d00;
+    border: 3px solid rgb(180, 180, 180);
+    color: white;
+    border-radius: 15px;
+    width: 20%;
+    height: 30px;
+    cursor: pointer;
+    transition: .2s;
+    font-weight: bold;
+}
+
+.btn:hover{
+    background: rgba(192, 192, 192, 0.267);
+    scale: 105%;
+}
+
+.btn:active{
+    scale: 100%;
+}
+
+@keyframes background {
+    0%{
+        background-position: 0% 100%;
+    }
+    50%{
+        background-position: 100% 100%;
+    }
+    100%{
+        background-position: 0% 100%;
+    }
+}
